@@ -68,7 +68,7 @@ Docker must be installed
    DATABRICKS_USERNAME = my.email@gmail.com
    DATABRICKS_PASSWORD =  abc123
    DATABRICKS_URL = https://<databricks-instance>.com # i.e. https://cust-success.cloud.databricks.com
-   DATABRICKS_TOKEN =   asdfasfe13185eafa351eafefewfa21sdfasf # https://docs.databricks.com/dev-tools/api/latest/authentication.html
+   DATABRICKS_TOKEN = <token>  # https://docs.databricks.com/dev-tools/api/latest/authentication.html
    DATABRICKS_OID = 5468435218588646 # found in url .databricks.com/?o=5468435218588646
    ```
 
