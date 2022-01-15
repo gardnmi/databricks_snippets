@@ -65,8 +65,8 @@ Docker must be installed
 2. Create a `.env` file with the below enviromental variables and place it at the top level of the project.
 
    ```sh
-   DATABRICKS_USERNAME = my.email@gmail.com
-   DATABRICKS_PASSWORD =  abc123
+   DATABRICKS_USERNAME = <user_name> # i.e. my.email@company_name.com
+   DATABRICKS_PASSWORD =  <password> # i.e. ILoveDogs1
    DATABRICKS_URL = https://<databricks-instance>.com # i.e. https://cust-success.cloud.databricks.com
    DATABRICKS_TOKEN = <token>  # https://docs.databricks.com/dev-tools/api/latest/authentication.html
    DATABRICKS_OID = 5468435218588646 # found in url .databricks.com/?o=5468435218588646
