@@ -67,12 +67,12 @@ Docker must be installed
    ```sh
    DATABRICKS_USERNAME = my.email@gmail.com
    DATABRICKS_PASSWORD =  abc123
-   DATABRICKS_URL = https://mydatabricksinstance.cloud.databricks.com
-   DATABRICKS_TOKEN =   asdfasfe13185eafa351eafefewfa21sdfasf # api token
+   DATABRICKS_URL = https://<databricks-instance>.com # i.e. https://cust-success.cloud.databricks.com
+   DATABRICKS_TOKEN =   asdfasfe13185eafa351eafefewfa21sdfasf # https://docs.databricks.com/dev-tools/api/latest/authentication.html
    DATABRICKS_OID = 5468435218588646 # found in url .databricks.com/?o=5468435218588646
    ```
 
-   The file should be save directly below the root directory
+   The file should be saved directly below the root directory
 
    ```bash
    ├── databricks_snippets
