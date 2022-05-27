@@ -29,9 +29,9 @@
   </p>
 </div>
 
-## UPDATE:  
+## UPDATES:  
 
-[Databricks has added a similiar search feature on it's platform.](https://docs.databricks.com/release-notes/product/2022/may.html#improved-workspace-search-public-preview)    
+* 5/26/2022 - [Databricks has added a similiar search feature on it's platform.](https://docs.databricks.com/release-notes/product/2022/may.html#improved-workspace-search-public-preview)    
 
 <!-- ABOUT THE PROJECT -->
 
