@@ -99,7 +99,7 @@ Docker must be installed
 
 5. Open up your browser and navigate to:
    ```
-   http://localhost:5000/
+   http://localhost:5001/
    ```
 6. Before searching you will need to import Notebooks from your Workspace or Repo.
 
