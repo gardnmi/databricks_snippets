@@ -22,8 +22,10 @@
 
   <h3 align="center">Databricks Snippets</h3>
 
+  (Forked from [gardnmi's Databricks Snippets](https://github.com/gardnmi/databricks_snippets).)
+
   <p align="center">
-    An elastic search site to help you find snippets of code in your databricks notebooks.
+    An Elasticsearch site to help you find snippets of code in your Databricks notebooks.
     <br />
     <br />
   </p>
@@ -31,7 +33,7 @@
 
 ## UPDATES:  
 
-* 5/26/2022 - [Databricks has added a similiar search feature on it's platform.](https://docs.databricks.com/release-notes/product/2022/may.html#improved-workspace-search-public-preview)    
+* 5/26/2022 - [Databricks has added a similiar search feature on its platform.](https://docs.databricks.com/release-notes/product/2022/may.html#improved-workspace-search-public-preview)    
 
 <!-- ABOUT THE PROJECT -->
 
@@ -39,7 +41,7 @@
 
 ![Alt Text](https://media1.giphy.com/media/GIS49S3MU28GBQMnMX/giphy.gif?cid=790b7611cf0f47f83ee07e5804d41bf151525e71ed16a422&rid=giphy.gif&ct=gf)
 
-An elastic search website built to find code snippets in your databricks instance.
+An Elasticsearch website built to find code snippets in your Databricks workspace.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -64,16 +66,16 @@ Docker must be installed
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/gardnmi/databricks_snippets
+   git clone https://github.com/harjeeth/databricks_snippets
    ```
-2. Create a `.env` file with the below enviromental variables and place it at the top level of the project.
+2. Create an `.env` file with these enviroment variables:
 
    ```sh
    DATABRICKS_URL=https://<databricks-instance>.com # i.e. https://cust-success.cloud.databricks.com
    DATABRICKS_TOKEN=<token>  # https://docs.databricks.com/dev-tools/api/latest/authentication.html
    ```
 
-   The file should be saved directly below the root directory
+   The file should be saved directly below the root directory:
 
    ```bash
    ├── databricks_snippets
@@ -88,7 +90,7 @@ Docker must be installed
    cd databricks_snippets
    ```
 
-4. Run the docker command in your shell
+4. Run the Docker command in your shell
 
    ```sh
    docker-compose up
@@ -112,15 +114,28 @@ Docker must be installed
    /Repos/mike.gardner@kytheralabs.com
    ```
 
-   The app uses the [workspace api](https://docs.databricks.com/dev-tools/api/latest/workspace.html#list) to list the desired notebooks and scrape the command blocks.
-   <p align="right">(<a href="#top">back to top</a>)</p>
+   The app uses the [workspace api](https://docs.databricks.com/dev-tools/api/latest/workspace.html#list) to list the desired notebooks and scrape the notebooks.
 
-<!-- LICENSE -->
+7. To close the app, press `Ctrl+C` in the console.
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+### Development
+To apply changes in your code:
+1. Close the app (`Ctrl+C`)
+2. In the console, remove containers, app image and volume by running:
+```
+make clean
+```
+3. Restart the app (`docker-compose up`)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Debug Resources
 
 - [Elasticsearch Docker Image Setup Guide](https://www.elastic.co/guide/en/elasticsearch/reference/7.16/docker.html)
 - [wsl2 Docker High Memory Usage](https://medium.com/@lewwybogus/how-to-stop-wsl2-from-hogging-all-your-ram-with-docker-d7846b9c5b37)
+
+<!-- LICENSE -->
 
 ## License
 
