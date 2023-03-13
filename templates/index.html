@@ -6,7 +6,7 @@
 		<meta name="description" content="" />
 		<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
 		<meta name="generator" content="Hugo 0.84.0" />
-		<title>DataBricks Snippets</title>
+		<title>Databricks Snippets</title>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/" />
 
@@ -91,7 +91,7 @@
 							fill="currentColor"
 						></path>
 					</svg>
-					<span class="fs-4">DataBricks Snippets</span>
+					<span class="fs-4">Databricks Snippets</span>
 				</a>
 			</header>
 			<div class="mb-3">
@@ -154,5 +154,13 @@
 		></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-core.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js"></script>
+		<script>
+			document.querySelectorAll('code').forEach(function (collapseEl) {
+			  const coll = new bootstrap.Collapse(collapseEl, {hide: true})
+			  collapseEl.parentElement.addEventListener('click',()=>{
+				coll.toggle()
+			  })
+			})
+		  </script>
 	</body>
 </html>
