@@ -56,6 +56,7 @@ def check_progress():
 
 @app.route("/get_workspace", methods=["GET"])
 def get_workspace():
+    start_time = time.time()
     try:
         workspace = request.args.get("workspace")
         if workspace == "":
@@ -68,7 +69,6 @@ def get_workspace():
         actions = [
             {
                 "_index": "nodes_bulk",
-                "_type": "external",
                 "_id": str(data["notebook_id"]),
                 "_source": data,
             }
@@ -84,6 +84,8 @@ def get_workspace():
     
     except Exception as e:
         return jsonify(error=f"""Oops...something went wrong: {e}\n{traceback.print_exc()}""")
+    finally:
+        app.logger.info(f"Exported workspace data in {time.time() - start_time} seconds")
 
 
 @app.route("/", methods=["GET"])
