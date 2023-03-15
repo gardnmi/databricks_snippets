@@ -130,10 +130,10 @@
 				{% if code_blocks is not none %} {% for code_block in code_blocks %}
 				<div>
 					<span class="badge bg-light text-dark">
-						{{ code_block['_source']['code_block_language'] }} -
-						<a href="{{code_block['_source']['code_block_url']}}"> {{ code_block['_source']['pathName'] }} </a>
+						{{ code_block['_source']['notebook_language'] }} -
+						<a href="{{code_block['_source']['notebook_url']}}"> {{ code_block['_source']['notebook_path'] }} </a>
 					</span>
-					<pre><code class="language-{{ code_block['_source']['code_block_language'] }}">{{ code_block['_source']['command'] }}</code></pre>
+					<pre><code class="language-{{ code_block['_source']['notebook_language'] }}">{{ code_block['_source']['notebook_content'] }}</code></pre>
 				</div>
 				<br />
 				{% endfor %} {% endif %}
